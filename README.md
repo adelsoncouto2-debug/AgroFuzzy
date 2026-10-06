@@ -1,6 +1,7 @@
-# Desenvolvimento de um sistema de irrigação agrícola baseado em lógica fuzzy em sistemas embarcados
 <div align="center">
-  
+
+# 🌱 AgroFuzzy
+
 ### Sistema inteligente de irrigação agrícola baseado em Lógica Fuzzy
 
 <p>
@@ -529,4 +530,3 @@ Projeto desenvolvido como iniciativa de pesquisa e desenvolvimento tecnológico,
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:81C784,100:2E7D32&height=100&section=footer"/>
 
 </div>
-
