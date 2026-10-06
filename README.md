@@ -1,0 +1,2 @@
+# AgroFuzzy
+O presente repositório abrigará arquivos do projeto DESENVOLVIMENTO DE UM SISTEMA DE IRRIGAÇÃO AGRÍCOLA BASEADO EM LÓGICA FUZZY EM SISTEMAS EMBARCADOS 
