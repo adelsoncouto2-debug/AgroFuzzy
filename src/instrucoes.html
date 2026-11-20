@@ -23,7 +23,11 @@
             src="./image/image-removebg-preview.png"
             alt="Ilustração do sistema AgroFuzzy"
           />
-          <a class="arrow-link" href="../index.html" aria-label="Voltar ao início">
+          <a
+            class="arrow-link"
+            href="../index.html"
+            aria-label="Voltar ao início"
+          >
             <svg
               class="arrow"
               viewBox="0 0 24 24"
@@ -40,5 +44,11 @@
         </div>
       </div>
     </main>
+    <script>
+      const pagina = document.querySelector(".arrow-link");
+      pagina.addEventListener("click", function (event) {
+        window.location.href = "/src/escolha.html";
+      });
+    </script>
   </body>
 </html>

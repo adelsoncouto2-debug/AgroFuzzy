@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  background-color: rgb(20, 15, 7);
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+}
+
+.card {
+  width: 45%;
+  height: 45%;
+  border-radius: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(92, 62, 0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card:nth-child(1) {
+  background-color: rgb(155, 188, 153);
+}
+.card:nth-child(2) {
+  background-color: rgb(254, 238, 168);
+}
+.card:nth-child(3) {
+  background-color: rgb(240, 205, 165);
+}
+
+.card:nth-child(4) {
+  background-color: rgb(202, 238, 197);
+}
+
+.request-status {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  margin: 0;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.card:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  main {
+    display: grid;
+    min-height: 100vh;
+    min-height: 100svh;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    display: flex;
+    width: auto;
+    height: auto;
+    min-height: 140px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}
