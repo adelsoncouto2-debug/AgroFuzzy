@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  min-height: 100svh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-title {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  font-family: "Barlow Condensed";
+  font-weight: 600;
+  color: white;
+}
+
+.title-brand {
+  display: block;
+  margin-top: 0.35em;
+}
+
+.except {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  color: rgb(142, 165, 129);
+}
+
+.main-image {
+  display: block;
+  width: min(80vw, 360px);
+  height: auto;
+}
+.card {
+  width: 70%;
+  height: 300px;
+  max-width: 600px;
+  padding: 20px;
+  line-height: 2;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 18%;
+  left: 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.image-wrap {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+.arrow-link {
+  position: absolute;
+  right: 3%;
+  bottom: 4%;
+  display: inline-flex;
+  color: white;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.arrow-link:hover {
+  color: #a0a0a0;
+  transform: translateX(4px);
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: rgb(20, 15, 7);
+  }
+  main {
+    position: relative;
+    justify-content: flex-start;
+  }
+  .image-row {
+    width: 100%;
+    margin-top: auto;
+  }
+  .image-wrap {
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .main-image {
+    width: 100%;
+    max-width: none;
+    max-height: 45svh;
+    object-fit: contain;
+    animation: aparecer 0.2s ease forwards;
+  }
+  .main-title {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 0 20px;
+    font-size: 1.6rem;
+    transform: translateY(-50%);
+    animation: aparecer-titulo 0.4s ease forwards;
+    margin-bottom: 0;
+  }
+  @keyframes aparecer-titulo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
