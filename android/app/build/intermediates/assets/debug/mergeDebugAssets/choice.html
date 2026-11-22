@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escolher cultura - AgroFuzzy</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="choice">
+  <main>
+    <header class="app-header">
+      <button id="back-button" type="button" aria-label="Voltar">‹</button>
+      <h1>Escolha a cultura</h1>
+      <button id="settings-button" type="button" aria-label="Configurar controlador">⚙</button>
+    </header>
+
+    <section class="culture-grid" aria-label="Culturas disponíveis">
+      <button class="culture-card soja" type="button" data-cultura="soja"><span>Soja</span></button>
+      <button class="culture-card milho" type="button" data-cultura="milho"><span>Milho</span></button>
+      <button class="culture-card cafe" type="button" data-cultura="cafe"><span>Café</span></button>
+      <button class="culture-card cana" type="button" data-cultura="cana-de-acucar"><span>Cana</span></button>
+    </section>
+
+    <dialog id="settings-dialog">
+      <form method="dialog">
+        <h2>Controlador</h2>
+        <label for="controller-url">Endereço</label>
+        <input id="controller-url" type="url" value="http://192.168.4.1" />
+        <button id="save-controller" type="button">Salvar</button>
+      </form>
+    </dialog>
+
+    <section id="status-panel" class="status-panel" hidden>
+      <span id="status-culture">Aguardando seleção</span>
+      <strong id="status-message"></strong>
+      <div class="status-values">
+        <span><b id="status-dose">--</b>% dose</span>
+        <span><b id="status-volume">--</b> mL</span>
+        <span><b id="status-pump">--</b></span>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

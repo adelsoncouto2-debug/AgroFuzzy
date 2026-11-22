@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>AgroFuzzy</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="welcome">
+  <main class="welcome-main">
+    <div class="welcome-title">
+      <span>Bem-vindo ao sistema</span>
+      <strong><b>Agro</b><b>Fuzzy</b></strong>
+    </div>
+    <div class="hero">
+      <img src="./image/image-removebg-preview.png" alt="Sistema de irrigação AgroFuzzy" />
+      <button class="next-button" type="button" aria-label="Continuar">›</button>
+    </div>
+  </main>
+  <script>
+    document.querySelector(".next-button").addEventListener("click", () => {
+      location.href = "./instructions.html";
+    });
+  </script>
+</body>
+</html>

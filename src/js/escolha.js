@@ -10,7 +10,6 @@ botoesCultura.forEach((botao) => {
     botoesCultura.forEach((item) => {
       item.disabled = true;
     });
-
     try {
       const resposta = await fetch(CONTROLLER_URL, {
         method: "POST",

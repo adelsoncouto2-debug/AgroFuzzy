@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instruções - AgroFuzzy</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="instructions">
+  <main>
+    <h1>Instruções de uso</h1>
+    <section class="instruction-card">
+      <ol>
+        <li>Conecte o celular à rede Wi-Fi <strong>IrrigacaoFuzzy</strong>.</li>
+        <li>Informe o endereço do controlador e escolha a cultura.</li>
+        <li>Coloque os sensores no solo antes de iniciar o ciclo.</li>
+      </ol>
+    </section>
+    <button class="next-button fixed-next" type="button" aria-label="Continuar">›</button>
+  </main>
+  <script>
+    document.querySelector(".fixed-next").addEventListener("click", () => {
+      location.href = "./choice.html";
+    });
+  </script>
+</body>
+</html>
