@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroFuzzy</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-title">
+        <span>Bem-vindo ao sistema</span>
+        <span class="title-brand"
+          ><span class="except">Agro</span
+          ><span class="except">Fuzzy</span></span
+        >
+      </div>
+      <div class="image-row">
+        <div class="image-wrap">
+          <img
+            class="main-image"
+            src="src/image/image-removebg-preview.png"
+            alt="Ilustração do sistema AgroFuzzy"
+          />
+
+          <a class="arrow-link" href="#" aria-label="Entrar no sistema">
+            <svg
+              class="arrow"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </main>
+    <script>
+      const pagina = document.querySelector(".arrow-link");
+      pagina.addEventListener("click", function (event) {
+        window.location.href = "/src/instrucoes.html";
+      });
+    </script>
+  </body>
+</html>
